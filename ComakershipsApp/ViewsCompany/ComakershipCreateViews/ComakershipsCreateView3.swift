@@ -11,11 +11,9 @@ struct ComakershipsCreateView3: View {
     @ObservedObject var viewModel: CreateComakershipVM
     @ObservedObject var api = API.shared
     
-    @State var isCreating: Bool = false
-    @State var finished: Bool = false
     @State var isRequestErrorViewPresented: Bool = false
     @State var errorDescription: String = ""
-    @State var isAlerted: Bool = false
+    @State var finished = false
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     
     var body: some View {
@@ -67,46 +65,35 @@ struct ComakershipsCreateView3: View {
             Text("Click on the plus box to add a skill, or on the minus box to start over.")
                 .font(.caption)
             
-            //kijken naar die isactive
-            NavigationLink(destination: ComakershipsMainView().navigationBarBackButtonHidden(true), isActive: self.$finished ){
-                Button(action: {
-                    isCreating = true
-                    viewModel.createComakership(){ (result) in
-                        switch result {
-                        case .success(_):
-                            //print("response: \(response)")
-//                            self.viewModel.loading = false
-                           // self.isAlerted = true
-//                            errorDescription = "Comakership successfully created!"
-                            self.finished = true
-//                            self.isRequestErrorViewPresented = true
-                        case .failure(let error):
-                            switch error {
-                            case .urlError(_):
-                                errorDescription = "URL Error"
-                            case .decodingError(_):
-                                errorDescription = "DecodingError"
-                            case .genericError(_):
-                                errorDescription = "GenericError"
-                            case .invalidPurchaseKey:
-                                errorDescription = "The purchase key is invalid."
-                            }
-                            self.finished = true
-                            viewModel.isAlerted = true
+            Button(action: {
+                viewModel.createComakership(){ (result) in
+                    switch result {
+                    case .success(_):
+                        self.finished = true
+                    case .failure(let error):
+                        switch error {
+                        case .urlError(_):
+                            errorDescription = "URL Error"
+                        case .decodingError(_):
+                            errorDescription = "DecodingError"
+                        case .genericError(_):
+                            errorDescription = "GenericError"
+                        case .invalidPurchaseKey:
+                            errorDescription = "The purchase key is invalid."
                         }
-                        viewModel.loading = false
-                        isCreating = false
                     }
-//                    self.presentationMode.wrappedValue.dismiss()
-                }, label: {
-                    GreenButton(text: "Create Comakership")
-                        .opacity(viewModel.partThreeComplete ? 1 : 0.5)
-                })
-                    .disabled(!viewModel.partThreeComplete)
-            }
+                }
+//                self.presentationMode.wrappedValue.dismiss()
+            }, label: {
+                GreenButton(text: "Create Comakership")
+                    .opacity(viewModel.partThreeComplete ? 1 : 0.5)
+            })
+            .disabled(!viewModel.partThreeComplete)
+            
+            
             
             .onAppear{
-                self.finished = false
+                
             }
             
 

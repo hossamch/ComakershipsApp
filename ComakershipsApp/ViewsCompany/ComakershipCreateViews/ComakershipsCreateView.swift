@@ -19,7 +19,7 @@ struct ComakershipsCreateView: View {
             VStack{
                 TopRect()
                 if viewModel.loading{
-                    ProgressView("One moment please..")
+                    MidProgressView()
                 }
                 else{
                     ScrollView{
@@ -91,7 +91,7 @@ struct ComakershipsCreateView: View {
             .onAppear{
                 if viewModel.success{
                 //    viewModel.success = false
-                    self.presentationMode.wrappedValue.dismiss()
+//                    self.presentationMode.wrappedValue.dismiss()
                 }
             }
         }

@@ -18,7 +18,6 @@ struct FileUploadView: View {
 
     var body: some View {
         VStack{
-            //Text("File: \(try String(contentsOf: (file! )) catch{print("nigger")})")
             Button(action: {
                     isImporting = true
                 }) {
@@ -26,7 +25,7 @@ struct FileUploadView: View {
                 }
                 .fileImporter(
                     isPresented: $isImporting,
-                    allowedContentTypes: [.image, .jpeg, .png],
+                    allowedContentTypes: [.flatRTFD, .text, .pdf],
                     allowsMultipleSelection: false
                 ) { result in
                     if case .success = result {
@@ -36,15 +35,6 @@ struct FileUploadView: View {
                             viewModel.fileData = try result.get().first!.dataRepresentation
                             viewModel.fileName = fileURL.relativePath
                             viewModel.isFileSelected = true
-                            
-                            //viewModel.fileName = fileURL.
-                            
-    //                        let audioURL: URL = try result.get().first!
-    //
-    //                        let audioPlayer = try AVAudioPlayer(contentsOf: audioURL)
-    //                        audioPlayer.delegate = ...
-    //                        audioPlayer.prepareToPlay()
-    //                        audioPlayer.play() // ← ERROR raised here
 
                         } catch {
                             let nsError = error as NSError

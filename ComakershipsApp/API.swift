@@ -230,7 +230,7 @@ final public class API: ObservableObject{
             city: city,
             zipcode: zipcode,
             companyUser: CompanyUserReg(
-                name: name,
+                name: username,
                 email: email,
                 password: password
             )

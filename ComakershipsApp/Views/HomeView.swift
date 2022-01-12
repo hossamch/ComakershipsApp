@@ -13,7 +13,7 @@ struct HomeView: View {
     @ObservedObject var inboxvm = InboxTeamsVM.shared
     @ObservedObject var comakershipvm = ComakershipVM.shared
     @ObservedObject var manager = NavigationManager.shared
-    
+    //beta
     var body: some View {
         NavigationView{
             VStack {

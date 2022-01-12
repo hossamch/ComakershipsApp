@@ -27,6 +27,7 @@ class CreateComakershipVM: ObservableObject{
     @Published var programs = [Program]()
     @Published var api = API.shared
     @Published var loading = false
+    @Published var finished = false
     static var shared = CreateComakershipVM()
     
     
@@ -41,7 +42,7 @@ class CreateComakershipVM: ObservableObject{
     }
     
     var partOneComplete: Bool{
-        if  name == "" || description == "" || currentlySelectedProgram == nil{
+        if  name == "" || description == "" || currentlySelectedProgram == nil || purchaseKey == ""{
             return false
         }
         return true
@@ -178,6 +179,7 @@ class CreateComakershipVM: ObservableObject{
     func createComakership(completion: @escaping (Result<Void, RequestError>) -> Void){
         loading = true
         success = false
+        finished = false
         let url = URL(string: api.apiUrl + "/comakerships")!
         print("shit: Bearer\(api.accessToken!)")
         var urlRequest = URLRequest(url: url)
@@ -224,6 +226,7 @@ class CreateComakershipVM: ObservableObject{
                 case .finished:
                     self.loading = false
                     self.success = true
+                    self.finished = true
                     self.isAlerted = true
                     print("result: \(result)")
                     completion(.success(()))
@@ -235,6 +238,9 @@ class CreateComakershipVM: ObservableObject{
                     case let decodingError as DecodingError:
                         completion(.failure(.decodingError(decodingError)))
                     case let RequestError.invalidPurchaseKey:
+                        self.isAlerted = true
+                        self.finished = true
+                        self.loading = false
                         completion(.failure(.invalidPurchaseKey))
                     default:
                         completion(.failure(.genericError(error)))

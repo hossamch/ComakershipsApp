@@ -19,8 +19,7 @@ struct SearchTeamView2: View {
             TopRect()
             VStack{
                 if (viewModel.loadingJoin){
-                    ProgressView("Loading..")
-                        .position(x: UIScreen.main.bounds.width/2, y: 0)
+                    MidProgressView()
                 }
                 else{
                     VStack{
@@ -36,11 +35,13 @@ struct SearchTeamView2: View {
                                 .font(.subheadline)
                                 .padding()
                         }
-                        .padding()
-                        //.frame(height: 400)
+//                        .frame(height: 200)
+                        
                         .navigationTitle("Results")
                         .overlay(RoundedRectangle(cornerRadius: 8).stroke(Color.gray, lineWidth: 1))
                         .position(x: UIScreen.main.bounds.width/2, y: 200)
+                        .padding(5)
+                        
                         
                         Spacer()
                         

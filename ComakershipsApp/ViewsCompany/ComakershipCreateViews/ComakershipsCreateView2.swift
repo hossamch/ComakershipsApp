@@ -61,7 +61,6 @@ struct ComakershipsCreateView2: View {
             
             NavigationLink(
                 destination: ComakershipsCreateView3(viewModel: viewModel).navigationBarTitle("Skills"),
-                //isActive: $isLoggedin,
                 label: {
                     Text("Next")
                         .frame(maxWidth: .infinity, minHeight: 50)
@@ -73,11 +72,6 @@ struct ComakershipsCreateView2: View {
                 }
             )
                 .disabled(!viewModel.partTwoComplete)
-        }
-        .onAppear{
-//            if viewModel.success{
-//                self.presentationMode.wrappedValue.dismiss()
-//            }
         }
     }
 }

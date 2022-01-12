@@ -206,6 +206,7 @@ struct ComakershipOverView: View {
                 .padding()
                 .overlay(RoundedRectangle(cornerRadius: 8).stroke(Color.gray, lineWidth: 1))
                 .frame(height: 600)
+                .padding(.bottom)
                 .onAppear{
                     self.viewModel.getComakershipMembers(id: comakership.id)
                     self.deliverablesvm.getDeliverables(id: comakership.id)
