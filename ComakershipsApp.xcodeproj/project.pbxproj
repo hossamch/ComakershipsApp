@@ -3,16 +3,162 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7E08923C25A3D35900D08552 /* LinkedStudent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E08923B25A3D35900D08552 /* LinkedStudent.swift */; };
+		7E0A276E259CEE4B00E1E4F0 /* ComakershipsSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0A276D259CEE4B00E1E4F0 /* ComakershipsSearchView.swift */; };
+		7E0A2773259CEE5700E1E4F0 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0A2772259CEE5700E1E4F0 /* ProfileView.swift */; };
+		7E0A2778259D45DC00E1E4F0 /* ComakershipsGet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0A2777259D45DC00E1E4F0 /* ComakershipsGet.swift */; };
+		7E0BCA1025869A3A006FD71E /* RegisterStudent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0BCA0F25869A3A006FD71E /* RegisterStudent.swift */; };
+		7E0BCA1525869B7F006FD71E /* RegisterResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0BCA1425869B7F006FD71E /* RegisterResponse.swift */; };
+		7E1E251325A022F40081A449 /* StudentVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E1E251225A022F40081A449 /* StudentVM.swift */; };
+		7E241FF125926A2D00EAAD62 /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E241FF025926A2D00EAAD62 /* UserInfo.swift */; };
+		7E25516C259147B500FC89AF /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E25516B259147B500FC89AF /* BaseView.swift */; };
 		7E2688AB2582F2B2002751B3 /* ComakershipsAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E2688AA2582F2B2002751B3 /* ComakershipsAppApp.swift */; };
 		7E2688AD2582F2B2002751B3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E2688AC2582F2B2002751B3 /* ContentView.swift */; };
 		7E2688AF2582F2B3002751B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E2688AE2582F2B3002751B3 /* Assets.xcassets */; };
 		7E2688B22582F2B3002751B3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E2688B12582F2B3002751B3 /* Preview Assets.xcassets */; };
 		7E2688BD2582F2B3002751B3 /* ComakershipsAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E2688BC2582F2B3002751B3 /* ComakershipsAppTests.swift */; };
 		7E2688C82582F2B3002751B3 /* ComakershipsAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E2688C72582F2B3002751B3 /* ComakershipsAppUITests.swift */; };
+		7E2688D92582F310002751B3 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E2688D82582F310002751B3 /* API.swift */; };
+		7E2688DF2582F363002751B3 /* KeychainAccess in Frameworks */ = {isa = PBXBuildFile; productRef = 7E2688DE2582F363002751B3 /* KeychainAccess */; };
+		7E2688E62582F4AC002751B3 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E2688E52582F4AC002751B3 /* LoginView.swift */; };
+		7E2688EB2582F4BE002751B3 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E2688EA2582F4BE002751B3 /* RegisterView.swift */; };
+		7E2688F22582FB1C002751B3 /* LoginRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E2688F12582FB1C002751B3 /* LoginRequest.swift */; };
+		7E2688F72582FC05002751B3 /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E2688F62582FC05002751B3 /* LoginResponse.swift */; };
+		7E2688FC2582FCD4002751B3 /* RequestError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E2688FB2582FCD4002751B3 /* RequestError.swift */; };
+		7E2689042582FDDC002751B3 /* Comakership.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E2689032582FDDC002751B3 /* Comakership.swift */; };
+		7E268909258301A6002751B3 /* ComakershipCompany.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E268908258301A6002751B3 /* ComakershipCompany.swift */; };
+		7E26890E258302E7002751B3 /* ComakershipStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E26890D258302E7002751B3 /* ComakershipStatus.swift */; };
+		7E2689132583033A002751B3 /* Skill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E2689122583033A002751B3 /* Skill.swift */; };
+		7E2689182583037C002751B3 /* Program.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E2689172583037C002751B3 /* Program.swift */; };
+		7E26891D258306C1002751B3 /* Review.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E26891C258306C1002751B3 /* Review.swift */; };
+		7E296728258AFEE0001EA5D6 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E296727258AFEE0001EA5D6 /* HomeView.swift */; };
+		7E3155FC258451A700BFD7E9 /* ComakershipGetVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3155FB258451A700BFD7E9 /* ComakershipGetVM.swift */; };
+		7E3156072584777300BFD7E9 /* Company.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3156062584777300BFD7E9 /* Company.swift */; };
+		7E31560F258479B100BFD7E9 /* Deliverable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E31560E258479B100BFD7E9 /* Deliverable.swift */; };
+		7E31561425847C8E00BFD7E9 /* PurchaseKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E31561325847C8E00BFD7E9 /* PurchaseKey.swift */; };
+		7E31561925847D2100BFD7E9 /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E31561825847D2100BFD7E9 /* Team.swift */; };
+		7E31561E25847DC700BFD7E9 /* University.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E31561D25847DC700BFD7E9 /* University.swift */; };
+		7E31562325847EF500BFD7E9 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E31562225847EF500BFD7E9 /* User.swift */; };
+		7E31A2F5278DFCE000E21F7A /* ImageUploadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E31A2F4278DFCE000E21F7A /* ImageUploadView.swift */; };
+		7E31A2F7278DFDCE00E21F7A /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E31A2F6278DFDCE00E21F7A /* ImagePicker.swift */; };
+		7E31A2F9278E1B4000E21F7A /* ImageVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E31A2F8278E1B4000E21F7A /* ImageVM.swift */; };
+		7E3459B1275E9F7D001D5EE5 /* RegisterVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3459B0275E9F7D001D5EE5 /* RegisterVM.swift */; };
+		7E3459B3276A4575001D5EE5 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3459B2276A4575001D5EE5 /* MainView.swift */; };
+		7E3459B5276AA74E001D5EE5 /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3459B4276AA74E001D5EE5 /* Student.swift */; };
+		7E3459B7276E42FD001D5EE5 /* TeamsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3459B6276E42FD001D5EE5 /* TeamsView.swift */; };
+		7E3459B9276E44FB001D5EE5 /* InboxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3459B8276E44FB001D5EE5 /* InboxView.swift */; };
+		7E3459BB276FF1BA001D5EE5 /* TeamsVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3459BA276FF1BA001D5EE5 /* TeamsVM.swift */; };
+		7E3459BD276FFE1E001D5EE5 /* TeamResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3459BC276FFE1E001D5EE5 /* TeamResponse.swift */; };
+		7E3459BF277004AD001D5EE5 /* EditStudent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3459BE277004AD001D5EE5 /* EditStudent.swift */; };
+		7E3459C127700551001D5EE5 /* EditStudentVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3459C027700551001D5EE5 /* EditStudentVM.swift */; };
+		7E3459C327700748001D5EE5 /* EntryField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3459C227700748001D5EE5 /* EntryField.swift */; };
+		7E3459C52773C6D5001D5EE5 /* RegisterCompanyUserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3459C42773C6D4001D5EE5 /* RegisterCompanyUserView.swift */; };
+		7E3459C72773C7FD001D5EE5 /* RegisterCompany.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3459C62773C7FD001D5EE5 /* RegisterCompany.swift */; };
+		7E3459C92773C814001D5EE5 /* RegisterCompanyWithLogo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3459C82773C814001D5EE5 /* RegisterCompanyWithLogo.swift */; };
+		7E3459CB2773C8D2001D5EE5 /* CompanyUserReg.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3459CA2773C8D2001D5EE5 /* CompanyUserReg.swift */; };
+		7E3459CD2773CD8C001D5EE5 /* RegisterCompanyVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3459CC2773CD8B001D5EE5 /* RegisterCompanyVM.swift */; };
+		7E3459D02773D224001D5EE5 /* ComakershipsCreateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3459CF2773D224001D5EE5 /* ComakershipsCreateView.swift */; };
+		7E3459D32775766A001D5EE5 /* CompanyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3459D22775766A001D5EE5 /* CompanyView.swift */; };
+		7E3459D527757786001D5EE5 /* CompanyRegVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3459D427757786001D5EE5 /* CompanyRegVM.swift */; };
+		7E3459D9277654C3001D5EE5 /* RegisterCompanyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3459D8277654C3001D5EE5 /* RegisterCompanyView.swift */; };
+		7E3459DB2776CAFC001D5EE5 /* CompanyVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3459DA2776CAFC001D5EE5 /* CompanyVM.swift */; };
+		7E3459DD2776D877001D5EE5 /* CompanyUserGet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3459DC2776D877001D5EE5 /* CompanyUserGet.swift */; };
+		7E3459DF27788A3D001D5EE5 /* ViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3459DE27788A3D001D5EE5 /* ViewRouter.swift */; };
+		7E3459E12778A2C9001D5EE5 /* EditCompanyUserVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3459E02778A2C9001D5EE5 /* EditCompanyUserVM.swift */; };
+		7E3459E32778A4B8001D5EE5 /* CompanyUserProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3459E22778A4B7001D5EE5 /* CompanyUserProfileView.swift */; };
+		7E3459E52778A535001D5EE5 /* CompanyHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3459E42778A535001D5EE5 /* CompanyHomeView.swift */; };
+		7E3459E727791597001D5EE5 /* StudentToEdit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3459E627791597001D5EE5 /* StudentToEdit.swift */; };
+		7E34FAA5277CEB450023BCA6 /* LoginVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E34FAA4277CEB450023BCA6 /* LoginVM.swift */; };
+		7E34FAA7277D13420023BCA6 /* FormPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E34FAA6277D13420023BCA6 /* FormPicker.swift */; };
+		7E34FAAB277D26A80023BCA6 /* ComakershipsCreateView3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E34FAAA277D26A80023BCA6 /* ComakershipsCreateView3.swift */; };
+		7E34FAAD277D32F10023BCA6 /* ComakershipCreate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E34FAAC277D32F10023BCA6 /* ComakershipCreate.swift */; };
+		7E34FAB0277D5B1A0023BCA6 /* PurchaseKeyError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E34FAAF277D5B1A0023BCA6 /* PurchaseKeyError.swift */; };
+		7E34FAB2277ED1A20023BCA6 /* CreateTeamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E34FAB1277ED1A20023BCA6 /* CreateTeamView.swift */; };
+		7E34FAB4277EE4680023BCA6 /* ComakershipsMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E34FAB3277EE4680023BCA6 /* ComakershipsMainView.swift */; };
+		7E34FAB6277EE6110023BCA6 /* ComakershipVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E34FAB5277EE6110023BCA6 /* ComakershipVM.swift */; };
+		7E34FAB9277F6EB40023BCA6 /* BaseComakership.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E34FAB8277F6EB30023BCA6 /* BaseComakership.swift */; };
+		7E34FABB277F70E50023BCA6 /* ComakershipCGet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E34FABA277F70E50023BCA6 /* ComakershipCGet.swift */; };
+		7E34FABD277F98E10023BCA6 /* ComakershipKickoffView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E34FABC277F98E10023BCA6 /* ComakershipKickoffView2.swift */; };
+		7E34FABF277FD72C0023BCA6 /* EditComakershipVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E34FABE277FD72C0023BCA6 /* EditComakershipVM.swift */; };
+		7E34FAC1277FD8520023BCA6 /* EditComakership.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E34FAC0277FD8520023BCA6 /* EditComakership.swift */; };
+		7E34FAC3277FEFDC0023BCA6 /* ComakershipApplyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E34FAC2277FEFDC0023BCA6 /* ComakershipApplyView.swift */; };
+		7E34FAC5277FF3BC0023BCA6 /* ApplyVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E34FAC4277FF3BC0023BCA6 /* ApplyVM.swift */; };
+		7E34FAC7277FF9D90023BCA6 /* TeamPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E34FAC6277FF9D90023BCA6 /* TeamPost.swift */; };
+		7E34FAC9277FFD720023BCA6 /* MyTeamsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E34FAC8277FFD720023BCA6 /* MyTeamsView.swift */; };
+		7E34FACB277FFF410023BCA6 /* InboxCompanyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E34FACA277FFF410023BCA6 /* InboxCompanyView.swift */; };
+		7E34FACD277FFF8C0023BCA6 /* InboxVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E34FACC277FFF8C0023BCA6 /* InboxVM.swift */; };
+		7E34FAD027800A000023BCA6 /* SearchTeamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E34FACF27800A000023BCA6 /* SearchTeamView.swift */; };
+		7E34FAD427800AB10023BCA6 /* GreenButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E34FAD327800AB10023BCA6 /* GreenButton.swift */; };
+		7E34FAD627800F590023BCA6 /* TeamDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E34FAD527800F590023BCA6 /* TeamDetailView.swift */; };
+		7E34FAD827808A8E0023BCA6 /* InboxTeamsVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E34FAD727808A8E0023BCA6 /* InboxTeamsVM.swift */; };
+		7E34FADA27808BEE0023BCA6 /* TeamGet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E34FAD927808BEE0023BCA6 /* TeamGet.swift */; };
+		7E34FADC27808C870023BCA6 /* LinkedTeam.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E34FADB27808C870023BCA6 /* LinkedTeam.swift */; };
+		7E34FADE278095680023BCA6 /* StudentUserT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E34FADD278095680023BCA6 /* StudentUserT.swift */; };
+		7E34FAE0278098000023BCA6 /* UserComakership.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E34FADF278098000023BCA6 /* UserComakership.swift */; };
+		7E34FAE227809DD30023BCA6 /* PurpleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E34FAE127809DD30023BCA6 /* PurpleButton.swift */; };
+		7E34FAE42780B0460023BCA6 /* EditTeamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E34FAE32780B0460023BCA6 /* EditTeamView.swift */; };
+		7E34FAE62780DE930023BCA6 /* JoinQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E34FAE52780DE930023BCA6 /* JoinQuery.swift */; };
+		7E34FAE82780DF0C0023BCA6 /* StudentUserBasic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E34FAE72780DF0C0023BCA6 /* StudentUserBasic.swift */; };
+		7E34FAEA2780DF620023BCA6 /* TeamBasic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E34FAE92780DF620023BCA6 /* TeamBasic.swift */; };
+		7E34FAEC2780ED340023BCA6 /* JoinModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E34FAEB2780ED340023BCA6 /* JoinModel.swift */; };
+		7E34FAEE2781D3540023BCA6 /* RedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E34FAED2781D3540023BCA6 /* RedButton.swift */; };
+		7E34FAF02781E4060023BCA6 /* MidProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E34FAEF2781E4060023BCA6 /* MidProgressView.swift */; };
+		7E34FAF32781FD4C0023BCA6 /* EditTeamVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E34FAF22781FD4C0023BCA6 /* EditTeamVM.swift */; };
+		7E34FAF527821C780023BCA6 /* SearchTeamView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E34FAF427821C780023BCA6 /* SearchTeamView2.swift */; };
+		7E34FAF727824C130023BCA6 /* MyJoinQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E34FAF627824C130023BCA6 /* MyJoinQuery.swift */; };
+		7E4AE9B32784009D00308036 /* ApplicationsForTeam.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4AE9B22784009D00308036 /* ApplicationsForTeam.swift */; };
+		7E4AE9B5278400DA00308036 /* MyApplications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4AE9B4278400DA00308036 /* MyApplications.swift */; };
+		7E4AE9B72784B9D200308036 /* TeamMembers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4AE9B62784B9D100308036 /* TeamMembers.swift */; };
+		7E4AE9B92784C05F00308036 /* Member.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4AE9B82784C05F00308036 /* Member.swift */; };
+		7E4AE9BB2784C65500308036 /* TeamApplycation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4AE9BA2784C65500308036 /* TeamApplycation.swift */; };
+		7E4AE9BE27869A3A00308036 /* CompletedComakershipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4AE9BD27869A3A00308036 /* CompletedComakershipView.swift */; };
+		7E4AE9C027869BF000308036 /* ComakershipKickoffView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4AE9BF27869BF000308036 /* ComakershipKickoffView.swift */; };
+		7E4AE9C22786A30500308036 /* testview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4AE9C12786A30500308036 /* testview.swift */; };
+		7E4AE9C42786BFD900308036 /* ComakershipComplete.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4AE9C32786BFD900308036 /* ComakershipComplete.swift */; };
+		7E4AE9C62786C02400308036 /* ComakershipMembers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4AE9C52786C02400308036 /* ComakershipMembers.swift */; };
+		7E4AE9C827874E4C00308036 /* EditComakershipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4AE9C727874E4C00308036 /* EditComakershipView.swift */; };
+		7E4AE9CC278791AC00308036 /* ComakershipOverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4AE9CB278791AC00308036 /* ComakershipOverView.swift */; };
+		7E4AE9CE278792AD00308036 /* FilesVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4AE9CD278792AD00308036 /* FilesVM.swift */; };
+		7E4AE9D127879F4000308036 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 7E4AE9D027879F4000308036 /* Alamofire */; };
+		7E4AE9D32787A46900308036 /* ImageRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4AE9D22787A46900308036 /* ImageRequest.swift */; };
+		7E4AE9D52787A4F900308036 /* FileUpload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4AE9D42787A4F900308036 /* FileUpload.swift */; };
+		7E4AE9D72787A65900308036 /* FileSelectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4AE9D62787A65900308036 /* FileSelectView.swift */; };
+		7E4AE9D92787A69C00308036 /* FileInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4AE9D82787A69C00308036 /* FileInput.swift */; };
+		7E4AE9E12787C74E00308036 /* FilesGetVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4AE9E02787C74E00308036 /* FilesGetVM.swift */; };
+		7E4AE9E42787D47F00308036 /* ComakershipSummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4AE9E32787D47F00308036 /* ComakershipSummaryView.swift */; };
+		7E4AE9E627880D2500308036 /* ComakershipUploadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4AE9E527880D2500308036 /* ComakershipUploadView.swift */; };
+		7E4AE9E82788166C00308036 /* FileUploadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4AE9E72788166C00308036 /* FileUploadView.swift */; };
+		7E4AE9EA278816F400308036 /* PDFKitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4AE9E9278816F400308036 /* PDFKitView.swift */; };
+		7E4AE9EC2788F02F00308036 /* DeliverablesVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4AE9EB2788F02E00308036 /* DeliverablesVM.swift */; };
+		7E4AE9EE2788F07200308036 /* Assignment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4AE9ED2788F07200308036 /* Assignment.swift */; };
+		7E4AE9F027894FCD00308036 /* ComakershipProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4AE9EF27894FCD00308036 /* ComakershipProgressBar.swift */; };
+		7E4AE9F32789F9D200308036 /* AddCompanyUserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4AE9F22789F9D200308036 /* AddCompanyUserView.swift */; };
+		7E4AE9F52789FAE100308036 /* AddCompanyUserVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4AE9F42789FAE100308036 /* AddCompanyUserVM.swift */; };
+		7E4AE9F7278A0EA300308036 /* AddCompanyUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4AE9F6278A0EA300308036 /* AddCompanyUser.swift */; };
+		7E4AE9F9278A4D8700308036 /* CompanyUserToEdit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4AE9F8278A4D8700308036 /* CompanyUserToEdit.swift */; };
+		7E4AE9FB278A4DEC00308036 /* ChangePassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4AE9FA278A4DEC00308036 /* ChangePassword.swift */; };
+		7E4AE9FD278A792700308036 /* CompanyMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4AE9FC278A792700308036 /* CompanyMainView.swift */; };
+		7E4AE9FF278A794000308036 /* NoCompanyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4AE9FE278A794000308036 /* NoCompanyView.swift */; };
+		7E4AEA01278A89F200308036 /* ModelManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4AEA00278A89F200308036 /* ModelManager.swift */; };
+		7E4AEA03278AA30900308036 /* ReviewPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4AEA02278AA30900308036 /* ReviewPost.swift */; };
+		7E4AEA06278B4AD700308036 /* NavigationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4AEA05278B4AD700308036 /* NavigationManager.swift */; };
+		7E6A682F277AD99300166A2F /* ComakershipSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6A682E277AD99300166A2F /* ComakershipSearch.swift */; };
+		7E6A6831277ADE3A00166A2F /* ComakershipsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6A6830277ADE3A00166A2F /* ComakershipsView.swift */; };
+		7E6A6833277BEAEC00166A2F /* TopRect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6A6832277BEAEC00166A2F /* TopRect.swift */; };
+		7E6A6835277BFE0000166A2F /* CreateComakershipVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6A6834277BFE0000166A2F /* CreateComakershipVM.swift */; };
+		7E6A6837277C184D00166A2F /* CheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6A6836277C184D00166A2F /* CheckBox.swift */; };
+		7E6A6839277C2E5100166A2F /* ComakershipsCreateView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6A6838277C2E5100166A2F /* ComakershipsCreateView2.swift */; };
+		7EED10BE2585629B003243F6 /* TeamComakership.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EED10BD2585629B003243F6 /* TeamComakership.swift */; };
+		7EED10C325856321003243F6 /* StudentUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EED10C225856321003243F6 /* StudentUser.swift */; };
+		7EED10C825856525003243F6 /* TeamInvite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EED10C725856525003243F6 /* TeamInvite.swift */; };
+		7EED10CD258565A4003243F6 /* StudentTeam.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EED10CC258565A4003243F6 /* StudentTeam.swift */; };
+		7EED10D52585A286003243F6 /* JoinRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EED10D42585A286003243F6 /* JoinRequest.swift */; };
+		7EED10DA2585A314003243F6 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EED10D92585A314003243F6 /* Login.swift */; };
+		7EED10DF2585B587003243F6 /* CompanyUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EED10DE2585B587003243F6 /* CompanyUser.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +179,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7E08923B25A3D35900D08552 /* LinkedStudent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedStudent.swift; sourceTree = "<group>"; };
+		7E0A276D259CEE4B00E1E4F0 /* ComakershipsSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComakershipsSearchView.swift; sourceTree = "<group>"; };
+		7E0A2772259CEE5700E1E4F0 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		7E0A2777259D45DC00E1E4F0 /* ComakershipsGet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComakershipsGet.swift; sourceTree = "<group>"; };
+		7E0BCA0F25869A3A006FD71E /* RegisterStudent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterStudent.swift; sourceTree = "<group>"; };
+		7E0BCA1425869B7F006FD71E /* RegisterResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterResponse.swift; sourceTree = "<group>"; };
+		7E1E251225A022F40081A449 /* StudentVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentVM.swift; sourceTree = "<group>"; };
+		7E241FF025926A2D00EAAD62 /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
+		7E25516B259147B500FC89AF /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
 		7E2688A72582F2B2002751B3 /* ComakershipsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ComakershipsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E2688AA2582F2B2002751B3 /* ComakershipsAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComakershipsAppApp.swift; sourceTree = "<group>"; };
 		7E2688AC2582F2B2002751B3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -45,6 +200,142 @@
 		7E2688C32582F2B3002751B3 /* ComakershipsAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ComakershipsAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E2688C72582F2B3002751B3 /* ComakershipsAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComakershipsAppUITests.swift; sourceTree = "<group>"; };
 		7E2688C92582F2B3002751B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7E2688D82582F310002751B3 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		7E2688E52582F4AC002751B3 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		7E2688EA2582F4BE002751B3 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		7E2688F12582FB1C002751B3 /* LoginRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRequest.swift; sourceTree = "<group>"; };
+		7E2688F62582FC05002751B3 /* LoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
+		7E2688FB2582FCD4002751B3 /* RequestError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestError.swift; sourceTree = "<group>"; };
+		7E2689032582FDDC002751B3 /* Comakership.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comakership.swift; sourceTree = "<group>"; };
+		7E268908258301A6002751B3 /* ComakershipCompany.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComakershipCompany.swift; sourceTree = "<group>"; };
+		7E26890D258302E7002751B3 /* ComakershipStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComakershipStatus.swift; sourceTree = "<group>"; };
+		7E2689122583033A002751B3 /* Skill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Skill.swift; sourceTree = "<group>"; };
+		7E2689172583037C002751B3 /* Program.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Program.swift; sourceTree = "<group>"; };
+		7E26891C258306C1002751B3 /* Review.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Review.swift; sourceTree = "<group>"; };
+		7E296727258AFEE0001EA5D6 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		7E3155FB258451A700BFD7E9 /* ComakershipGetVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComakershipGetVM.swift; sourceTree = "<group>"; };
+		7E3156062584777300BFD7E9 /* Company.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Company.swift; sourceTree = "<group>"; };
+		7E31560E258479B100BFD7E9 /* Deliverable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Deliverable.swift; sourceTree = "<group>"; };
+		7E31561325847C8E00BFD7E9 /* PurchaseKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseKey.swift; sourceTree = "<group>"; };
+		7E31561825847D2100BFD7E9 /* Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
+		7E31561D25847DC700BFD7E9 /* University.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = University.swift; sourceTree = "<group>"; };
+		7E31562225847EF500BFD7E9 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		7E31A2F4278DFCE000E21F7A /* ImageUploadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUploadView.swift; sourceTree = "<group>"; };
+		7E31A2F6278DFDCE00E21F7A /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		7E31A2F8278E1B4000E21F7A /* ImageVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageVM.swift; sourceTree = "<group>"; };
+		7E3459AF275D419F001D5EE5 /* todo.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = todo.md; sourceTree = "<group>"; };
+		7E3459B0275E9F7D001D5EE5 /* RegisterVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVM.swift; sourceTree = "<group>"; };
+		7E3459B2276A4575001D5EE5 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		7E3459B4276AA74E001D5EE5 /* Student.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
+		7E3459B6276E42FD001D5EE5 /* TeamsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsView.swift; sourceTree = "<group>"; };
+		7E3459B8276E44FB001D5EE5 /* InboxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxView.swift; sourceTree = "<group>"; };
+		7E3459BA276FF1BA001D5EE5 /* TeamsVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsVM.swift; sourceTree = "<group>"; };
+		7E3459BC276FFE1E001D5EE5 /* TeamResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamResponse.swift; sourceTree = "<group>"; };
+		7E3459BE277004AD001D5EE5 /* EditStudent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditStudent.swift; sourceTree = "<group>"; };
+		7E3459C027700551001D5EE5 /* EditStudentVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditStudentVM.swift; sourceTree = "<group>"; };
+		7E3459C227700748001D5EE5 /* EntryField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryField.swift; sourceTree = "<group>"; };
+		7E3459C42773C6D4001D5EE5 /* RegisterCompanyUserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterCompanyUserView.swift; sourceTree = "<group>"; };
+		7E3459C62773C7FD001D5EE5 /* RegisterCompany.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterCompany.swift; sourceTree = "<group>"; };
+		7E3459C82773C814001D5EE5 /* RegisterCompanyWithLogo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterCompanyWithLogo.swift; sourceTree = "<group>"; };
+		7E3459CA2773C8D2001D5EE5 /* CompanyUserReg.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyUserReg.swift; sourceTree = "<group>"; };
+		7E3459CC2773CD8B001D5EE5 /* RegisterCompanyVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterCompanyVM.swift; sourceTree = "<group>"; };
+		7E3459CF2773D224001D5EE5 /* ComakershipsCreateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComakershipsCreateView.swift; sourceTree = "<group>"; };
+		7E3459D22775766A001D5EE5 /* CompanyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyView.swift; sourceTree = "<group>"; };
+		7E3459D427757786001D5EE5 /* CompanyRegVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyRegVM.swift; sourceTree = "<group>"; };
+		7E3459D8277654C3001D5EE5 /* RegisterCompanyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterCompanyView.swift; sourceTree = "<group>"; };
+		7E3459DA2776CAFC001D5EE5 /* CompanyVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyVM.swift; sourceTree = "<group>"; };
+		7E3459DC2776D877001D5EE5 /* CompanyUserGet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyUserGet.swift; sourceTree = "<group>"; };
+		7E3459DE27788A3D001D5EE5 /* ViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewRouter.swift; sourceTree = "<group>"; };
+		7E3459E02778A2C9001D5EE5 /* EditCompanyUserVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditCompanyUserVM.swift; sourceTree = "<group>"; };
+		7E3459E22778A4B7001D5EE5 /* CompanyUserProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyUserProfileView.swift; sourceTree = "<group>"; };
+		7E3459E42778A535001D5EE5 /* CompanyHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyHomeView.swift; sourceTree = "<group>"; };
+		7E3459E627791597001D5EE5 /* StudentToEdit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentToEdit.swift; sourceTree = "<group>"; };
+		7E34FAA4277CEB450023BCA6 /* LoginVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVM.swift; sourceTree = "<group>"; };
+		7E34FAA6277D13420023BCA6 /* FormPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormPicker.swift; sourceTree = "<group>"; };
+		7E34FAAA277D26A80023BCA6 /* ComakershipsCreateView3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComakershipsCreateView3.swift; sourceTree = "<group>"; };
+		7E34FAAC277D32F10023BCA6 /* ComakershipCreate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComakershipCreate.swift; sourceTree = "<group>"; };
+		7E34FAAF277D5B1A0023BCA6 /* PurchaseKeyError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseKeyError.swift; sourceTree = "<group>"; };
+		7E34FAB1277ED1A20023BCA6 /* CreateTeamView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTeamView.swift; sourceTree = "<group>"; };
+		7E34FAB3277EE4680023BCA6 /* ComakershipsMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComakershipsMainView.swift; sourceTree = "<group>"; };
+		7E34FAB5277EE6110023BCA6 /* ComakershipVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComakershipVM.swift; sourceTree = "<group>"; };
+		7E34FAB8277F6EB30023BCA6 /* BaseComakership.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseComakership.swift; sourceTree = "<group>"; };
+		7E34FABA277F70E50023BCA6 /* ComakershipCGet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComakershipCGet.swift; sourceTree = "<group>"; };
+		7E34FABC277F98E10023BCA6 /* ComakershipKickoffView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComakershipKickoffView2.swift; sourceTree = "<group>"; };
+		7E34FABE277FD72C0023BCA6 /* EditComakershipVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditComakershipVM.swift; sourceTree = "<group>"; };
+		7E34FAC0277FD8520023BCA6 /* EditComakership.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditComakership.swift; sourceTree = "<group>"; };
+		7E34FAC2277FEFDC0023BCA6 /* ComakershipApplyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComakershipApplyView.swift; sourceTree = "<group>"; };
+		7E34FAC4277FF3BC0023BCA6 /* ApplyVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplyVM.swift; sourceTree = "<group>"; };
+		7E34FAC6277FF9D90023BCA6 /* TeamPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamPost.swift; sourceTree = "<group>"; };
+		7E34FAC8277FFD720023BCA6 /* MyTeamsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTeamsView.swift; sourceTree = "<group>"; };
+		7E34FACA277FFF410023BCA6 /* InboxCompanyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxCompanyView.swift; sourceTree = "<group>"; };
+		7E34FACC277FFF8C0023BCA6 /* InboxVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxVM.swift; sourceTree = "<group>"; };
+		7E34FACF27800A000023BCA6 /* SearchTeamView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTeamView.swift; sourceTree = "<group>"; };
+		7E34FAD327800AB10023BCA6 /* GreenButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenButton.swift; sourceTree = "<group>"; };
+		7E34FAD527800F590023BCA6 /* TeamDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamDetailView.swift; sourceTree = "<group>"; };
+		7E34FAD727808A8E0023BCA6 /* InboxTeamsVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxTeamsVM.swift; sourceTree = "<group>"; };
+		7E34FAD927808BEE0023BCA6 /* TeamGet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamGet.swift; sourceTree = "<group>"; };
+		7E34FADB27808C870023BCA6 /* LinkedTeam.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedTeam.swift; sourceTree = "<group>"; };
+		7E34FADD278095680023BCA6 /* StudentUserT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentUserT.swift; sourceTree = "<group>"; };
+		7E34FADF278098000023BCA6 /* UserComakership.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserComakership.swift; sourceTree = "<group>"; };
+		7E34FAE127809DD30023BCA6 /* PurpleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurpleButton.swift; sourceTree = "<group>"; };
+		7E34FAE32780B0460023BCA6 /* EditTeamView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditTeamView.swift; sourceTree = "<group>"; };
+		7E34FAE52780DE930023BCA6 /* JoinQuery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinQuery.swift; sourceTree = "<group>"; };
+		7E34FAE72780DF0C0023BCA6 /* StudentUserBasic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentUserBasic.swift; sourceTree = "<group>"; };
+		7E34FAE92780DF620023BCA6 /* TeamBasic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamBasic.swift; sourceTree = "<group>"; };
+		7E34FAEB2780ED340023BCA6 /* JoinModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinModel.swift; sourceTree = "<group>"; };
+		7E34FAED2781D3540023BCA6 /* RedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedButton.swift; sourceTree = "<group>"; };
+		7E34FAEF2781E4060023BCA6 /* MidProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MidProgressView.swift; sourceTree = "<group>"; };
+		7E34FAF22781FD4C0023BCA6 /* EditTeamVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditTeamVM.swift; sourceTree = "<group>"; };
+		7E34FAF427821C780023BCA6 /* SearchTeamView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTeamView2.swift; sourceTree = "<group>"; };
+		7E34FAF627824C130023BCA6 /* MyJoinQuery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyJoinQuery.swift; sourceTree = "<group>"; };
+		7E4AE9B22784009D00308036 /* ApplicationsForTeam.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationsForTeam.swift; sourceTree = "<group>"; };
+		7E4AE9B4278400DA00308036 /* MyApplications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyApplications.swift; sourceTree = "<group>"; };
+		7E4AE9B62784B9D100308036 /* TeamMembers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamMembers.swift; sourceTree = "<group>"; };
+		7E4AE9B82784C05F00308036 /* Member.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Member.swift; sourceTree = "<group>"; };
+		7E4AE9BA2784C65500308036 /* TeamApplycation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamApplycation.swift; sourceTree = "<group>"; };
+		7E4AE9BD27869A3A00308036 /* CompletedComakershipView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompletedComakershipView.swift; sourceTree = "<group>"; };
+		7E4AE9BF27869BF000308036 /* ComakershipKickoffView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComakershipKickoffView.swift; sourceTree = "<group>"; };
+		7E4AE9C12786A30500308036 /* testview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testview.swift; sourceTree = "<group>"; };
+		7E4AE9C32786BFD900308036 /* ComakershipComplete.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComakershipComplete.swift; sourceTree = "<group>"; };
+		7E4AE9C52786C02400308036 /* ComakershipMembers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComakershipMembers.swift; sourceTree = "<group>"; };
+		7E4AE9C727874E4C00308036 /* EditComakershipView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditComakershipView.swift; sourceTree = "<group>"; };
+		7E4AE9CB278791AC00308036 /* ComakershipOverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComakershipOverView.swift; sourceTree = "<group>"; };
+		7E4AE9CD278792AD00308036 /* FilesVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilesVM.swift; sourceTree = "<group>"; };
+		7E4AE9D22787A46900308036 /* ImageRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageRequest.swift; sourceTree = "<group>"; };
+		7E4AE9D42787A4F900308036 /* FileUpload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileUpload.swift; sourceTree = "<group>"; };
+		7E4AE9D62787A65900308036 /* FileSelectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileSelectView.swift; sourceTree = "<group>"; };
+		7E4AE9D82787A69C00308036 /* FileInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileInput.swift; sourceTree = "<group>"; };
+		7E4AE9E02787C74E00308036 /* FilesGetVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilesGetVM.swift; sourceTree = "<group>"; };
+		7E4AE9E32787D47F00308036 /* ComakershipSummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComakershipSummaryView.swift; sourceTree = "<group>"; };
+		7E4AE9E527880D2500308036 /* ComakershipUploadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComakershipUploadView.swift; sourceTree = "<group>"; };
+		7E4AE9E72788166C00308036 /* FileUploadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileUploadView.swift; sourceTree = "<group>"; };
+		7E4AE9E9278816F400308036 /* PDFKitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFKitView.swift; sourceTree = "<group>"; };
+		7E4AE9EB2788F02E00308036 /* DeliverablesVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliverablesVM.swift; sourceTree = "<group>"; };
+		7E4AE9ED2788F07200308036 /* Assignment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assignment.swift; sourceTree = "<group>"; };
+		7E4AE9EF27894FCD00308036 /* ComakershipProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComakershipProgressBar.swift; sourceTree = "<group>"; };
+		7E4AE9F22789F9D200308036 /* AddCompanyUserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCompanyUserView.swift; sourceTree = "<group>"; };
+		7E4AE9F42789FAE100308036 /* AddCompanyUserVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCompanyUserVM.swift; sourceTree = "<group>"; };
+		7E4AE9F6278A0EA300308036 /* AddCompanyUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCompanyUser.swift; sourceTree = "<group>"; };
+		7E4AE9F8278A4D8700308036 /* CompanyUserToEdit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyUserToEdit.swift; sourceTree = "<group>"; };
+		7E4AE9FA278A4DEC00308036 /* ChangePassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePassword.swift; sourceTree = "<group>"; };
+		7E4AE9FC278A792700308036 /* CompanyMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyMainView.swift; sourceTree = "<group>"; };
+		7E4AE9FE278A794000308036 /* NoCompanyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoCompanyView.swift; sourceTree = "<group>"; };
+		7E4AEA00278A89F200308036 /* ModelManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelManager.swift; sourceTree = "<group>"; };
+		7E4AEA02278AA30900308036 /* ReviewPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewPost.swift; sourceTree = "<group>"; };
+		7E4AEA05278B4AD700308036 /* NavigationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationManager.swift; sourceTree = "<group>"; };
+		7E6A682E277AD99300166A2F /* ComakershipSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComakershipSearch.swift; sourceTree = "<group>"; };
+		7E6A6830277ADE3A00166A2F /* ComakershipsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComakershipsView.swift; sourceTree = "<group>"; };
+		7E6A6832277BEAEC00166A2F /* TopRect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopRect.swift; sourceTree = "<group>"; };
+		7E6A6834277BFE0000166A2F /* CreateComakershipVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateComakershipVM.swift; sourceTree = "<group>"; };
+		7E6A6836277C184D00166A2F /* CheckBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBox.swift; sourceTree = "<group>"; };
+		7E6A6838277C2E5100166A2F /* ComakershipsCreateView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComakershipsCreateView2.swift; sourceTree = "<group>"; };
+		7EED10BD2585629B003243F6 /* TeamComakership.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamComakership.swift; sourceTree = "<group>"; };
+		7EED10C225856321003243F6 /* StudentUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentUser.swift; sourceTree = "<group>"; };
+		7EED10C725856525003243F6 /* TeamInvite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamInvite.swift; sourceTree = "<group>"; };
+		7EED10CC258565A4003243F6 /* StudentTeam.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentTeam.swift; sourceTree = "<group>"; };
+		7EED10D42585A286003243F6 /* JoinRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinRequest.swift; sourceTree = "<group>"; };
+		7EED10D92585A314003243F6 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		7EED10DE2585B587003243F6 /* CompanyUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyUser.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +343,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E2688DF2582F363002751B3 /* KeychainAccess in Frameworks */,
+				7E4AE9D127879F4000308036 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,11 +388,24 @@
 		7E2688A92582F2B2002751B3 /* ComakershipsApp */ = {
 			isa = PBXGroup;
 			children = (
+				7E2688D82582F310002751B3 /* API.swift */,
+				7E2688AE2582F2B3002751B3 /* Assets.xcassets */,
 				7E2688AA2582F2B2002751B3 /* ComakershipsAppApp.swift */,
 				7E2688AC2582F2B2002751B3 /* ContentView.swift */,
-				7E2688AE2582F2B3002751B3 /* Assets.xcassets */,
+				7E34FAAE277D5ADC0023BCA6 /* Error */,
 				7E2688B32582F2B3002751B3 /* Info.plist */,
+				7E2688E32582F3DE002751B3 /* Models */,
 				7E2688B02582F2B3002751B3 /* Preview Content */,
+				7E34FAB7277F6E950023BCA6 /* Protocols */,
+				7E2688EF2582FAEE002751B3 /* Requests */,
+				7E2688F02582FB00002751B3 /* Responses */,
+				7E3459AF275D419F001D5EE5 /* todo.md */,
+				7E3459CE2773D1D0001D5EE5 /* ViewComponents */,
+				7E3155FA2584518400BFD7E9 /* ViewModels */,
+				7E34FACE277FFFA40023BCA6 /* ViewModelsCompany */,
+				7E3459DE27788A3D001D5EE5 /* ViewRouter.swift */,
+				7E2688E42582F3E7002751B3 /* Views */,
+				7E3459D12773D271001D5EE5 /* ViewsCompany */,
 			);
 			path = ComakershipsApp;
 			sourceTree = "<group>";
@@ -130,6 +436,258 @@
 			path = ComakershipsAppUITests;
 			sourceTree = "<group>";
 		};
+		7E2688E32582F3DE002751B3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7E2689032582FDDC002751B3 /* Comakership.swift */,
+				7E268908258301A6002751B3 /* ComakershipCompany.swift */,
+				7E26890D258302E7002751B3 /* ComakershipStatus.swift */,
+				7E3156062584777300BFD7E9 /* Company.swift */,
+				7EED10DE2585B587003243F6 /* CompanyUser.swift */,
+				7E31560E258479B100BFD7E9 /* Deliverable.swift */,
+				7E3459BE277004AD001D5EE5 /* EditStudent.swift */,
+				7EED10D42585A286003243F6 /* JoinRequest.swift */,
+				7E08923B25A3D35900D08552 /* LinkedStudent.swift */,
+				7EED10D92585A314003243F6 /* Login.swift */,
+				7E2689172583037C002751B3 /* Program.swift */,
+				7E31561325847C8E00BFD7E9 /* PurchaseKey.swift */,
+				7E26891C258306C1002751B3 /* Review.swift */,
+				7E2689122583033A002751B3 /* Skill.swift */,
+				7EED10CC258565A4003243F6 /* StudentTeam.swift */,
+				7EED10C225856321003243F6 /* StudentUser.swift */,
+				7E31561825847D2100BFD7E9 /* Team.swift */,
+				7EED10BD2585629B003243F6 /* TeamComakership.swift */,
+				7EED10C725856525003243F6 /* TeamInvite.swift */,
+				7E31561D25847DC700BFD7E9 /* University.swift */,
+				7E31562225847EF500BFD7E9 /* User.swift */,
+				7E241FF025926A2D00EAAD62 /* UserInfo.swift */,
+				7E34FADB27808C870023BCA6 /* LinkedTeam.swift */,
+				7E34FADD278095680023BCA6 /* StudentUserT.swift */,
+				7E34FADF278098000023BCA6 /* UserComakership.swift */,
+				7E34FAE72780DF0C0023BCA6 /* StudentUserBasic.swift */,
+				7E34FAE92780DF620023BCA6 /* TeamBasic.swift */,
+				7E34FAEB2780ED340023BCA6 /* JoinModel.swift */,
+				7E4AE9B4278400DA00308036 /* MyApplications.swift */,
+				7E4AE9B62784B9D100308036 /* TeamMembers.swift */,
+				7E4AE9B82784C05F00308036 /* Member.swift */,
+				7E4AE9D82787A69C00308036 /* FileInput.swift */,
+				7E4AE9ED2788F07200308036 /* Assignment.swift */,
+				7E4AEA00278A89F200308036 /* ModelManager.swift */,
+				7E4AEA05278B4AD700308036 /* NavigationManager.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7E2688E42582F3E7002751B3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7E4AE9E22787D3F300308036 /* ComakershipViews */,
+				7E34FAF12781F2A10023BCA6 /* TeamViews */,
+				7E25516B259147B500FC89AF /* BaseView.swift */,
+				7E34FAB1277ED1A20023BCA6 /* CreateTeamView.swift */,
+				7E296727258AFEE0001EA5D6 /* HomeView.swift */,
+				7E3459B8276E44FB001D5EE5 /* InboxView.swift */,
+				7E2688E52582F4AC002751B3 /* LoginView.swift */,
+				7E3459B2276A4575001D5EE5 /* MainView.swift */,
+				7E0A2772259CEE5700E1E4F0 /* ProfileView.swift */,
+				7E2688EA2582F4BE002751B3 /* RegisterView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		7E2688EF2582FAEE002751B3 /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				7E34FABA277F70E50023BCA6 /* ComakershipCGet.swift */,
+				7E34FAAC277D32F10023BCA6 /* ComakershipCreate.swift */,
+				7E6A682E277AD99300166A2F /* ComakershipSearch.swift */,
+				7E3459DC2776D877001D5EE5 /* CompanyUserGet.swift */,
+				7E3459CA2773C8D2001D5EE5 /* CompanyUserReg.swift */,
+				7E2688F12582FB1C002751B3 /* LoginRequest.swift */,
+				7E3459C62773C7FD001D5EE5 /* RegisterCompany.swift */,
+				7E3459C82773C814001D5EE5 /* RegisterCompanyWithLogo.swift */,
+				7E0BCA0F25869A3A006FD71E /* RegisterStudent.swift */,
+				7E3459E627791597001D5EE5 /* StudentToEdit.swift */,
+				7E34FAC0277FD8520023BCA6 /* EditComakership.swift */,
+				7E34FAC6277FF9D90023BCA6 /* TeamPost.swift */,
+				7E34FAD927808BEE0023BCA6 /* TeamGet.swift */,
+				7E34FAE52780DE930023BCA6 /* JoinQuery.swift */,
+				7E34FAF627824C130023BCA6 /* MyJoinQuery.swift */,
+				7E4AE9B22784009D00308036 /* ApplicationsForTeam.swift */,
+				7E4AE9BA2784C65500308036 /* TeamApplycation.swift */,
+				7E4AE9C32786BFD900308036 /* ComakershipComplete.swift */,
+				7E4AE9C52786C02400308036 /* ComakershipMembers.swift */,
+				7E4AE9D22787A46900308036 /* ImageRequest.swift */,
+				7E4AE9D42787A4F900308036 /* FileUpload.swift */,
+				7E4AE9F6278A0EA300308036 /* AddCompanyUser.swift */,
+				7E4AE9F8278A4D8700308036 /* CompanyUserToEdit.swift */,
+				7E4AE9FA278A4DEC00308036 /* ChangePassword.swift */,
+				7E4AEA02278AA30900308036 /* ReviewPost.swift */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
+		7E2688F02582FB00002751B3 /* Responses */ = {
+			isa = PBXGroup;
+			children = (
+				7E3459B4276AA74E001D5EE5 /* Student.swift */,
+				7E2688F62582FC05002751B3 /* LoginResponse.swift */,
+				7E0BCA1425869B7F006FD71E /* RegisterResponse.swift */,
+				7E0A2777259D45DC00E1E4F0 /* ComakershipsGet.swift */,
+				7E3459BC276FFE1E001D5EE5 /* TeamResponse.swift */,
+			);
+			path = Responses;
+			sourceTree = "<group>";
+		};
+		7E3155FA2584518400BFD7E9 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				7E34FAC4277FF3BC0023BCA6 /* ApplyVM.swift */,
+				7E3155FB258451A700BFD7E9 /* ComakershipGetVM.swift */,
+				7E3459C027700551001D5EE5 /* EditStudentVM.swift */,
+				7E34FAA4277CEB450023BCA6 /* LoginVM.swift */,
+				7E3459B0275E9F7D001D5EE5 /* RegisterVM.swift */,
+				7E1E251225A022F40081A449 /* StudentVM.swift */,
+				7E3459BA276FF1BA001D5EE5 /* TeamsVM.swift */,
+				7E34FAF22781FD4C0023BCA6 /* EditTeamVM.swift */,
+				7E4AE9CD278792AD00308036 /* FilesVM.swift */,
+				7E4AE9EB2788F02E00308036 /* DeliverablesVM.swift */,
+				7E34FAD727808A8E0023BCA6 /* InboxTeamsVM.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		7E3459CE2773D1D0001D5EE5 /* ViewComponents */ = {
+			isa = PBXGroup;
+			children = (
+				7E3459C227700748001D5EE5 /* EntryField.swift */,
+				7E6A6832277BEAEC00166A2F /* TopRect.swift */,
+				7E6A6836277C184D00166A2F /* CheckBox.swift */,
+				7E34FAA6277D13420023BCA6 /* FormPicker.swift */,
+				7E34FAD327800AB10023BCA6 /* GreenButton.swift */,
+				7E34FAE127809DD30023BCA6 /* PurpleButton.swift */,
+				7E34FAED2781D3540023BCA6 /* RedButton.swift */,
+				7E34FAEF2781E4060023BCA6 /* MidProgressView.swift */,
+				7E4AE9EF27894FCD00308036 /* ComakershipProgressBar.swift */,
+				7E31A2F4278DFCE000E21F7A /* ImageUploadView.swift */,
+				7E31A2F6278DFDCE00E21F7A /* ImagePicker.swift */,
+			);
+			path = ViewComponents;
+			sourceTree = "<group>";
+		};
+		7E3459D12773D271001D5EE5 /* ViewsCompany */ = {
+			isa = PBXGroup;
+			children = (
+				7E4AE9BC2786364100308036 /* ComakershipCreateViews */,
+				7E4AE9F12789F99600308036 /* MyCompanyViews */,
+				7E4AEA04278AA94C00308036 /* ComakershipViews */,
+				7E4AE9C727874E4C00308036 /* EditComakershipView.swift */,
+				7E3459E42778A535001D5EE5 /* CompanyHomeView.swift */,
+				7E3459E22778A4B7001D5EE5 /* CompanyUserProfileView.swift */,
+				7E3459C42773C6D4001D5EE5 /* RegisterCompanyUserView.swift */,
+				7E3459D8277654C3001D5EE5 /* RegisterCompanyView.swift */,
+				7E34FACA277FFF410023BCA6 /* InboxCompanyView.swift */,
+				7E4AE9C12786A30500308036 /* testview.swift */,
+			);
+			path = ViewsCompany;
+			sourceTree = "<group>";
+		};
+		7E34FAAE277D5ADC0023BCA6 /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				7E2688FB2582FCD4002751B3 /* RequestError.swift */,
+				7E34FAAF277D5B1A0023BCA6 /* PurchaseKeyError.swift */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
+		7E34FAB7277F6E950023BCA6 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				7E34FAB8277F6EB30023BCA6 /* BaseComakership.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		7E34FACE277FFFA40023BCA6 /* ViewModelsCompany */ = {
+			isa = PBXGroup;
+			children = (
+				7E34FACC277FFF8C0023BCA6 /* InboxVM.swift */,
+				7E34FAB5277EE6110023BCA6 /* ComakershipVM.swift */,
+				7E3459D427757786001D5EE5 /* CompanyRegVM.swift */,
+				7E3459DA2776CAFC001D5EE5 /* CompanyVM.swift */,
+				7E6A6834277BFE0000166A2F /* CreateComakershipVM.swift */,
+				7E34FABE277FD72C0023BCA6 /* EditComakershipVM.swift */,
+				7E3459CC2773CD8B001D5EE5 /* RegisterCompanyVM.swift */,
+				7E4AE9E02787C74E00308036 /* FilesGetVM.swift */,
+				7E4AE9F42789FAE100308036 /* AddCompanyUserVM.swift */,
+				7E3459E02778A2C9001D5EE5 /* EditCompanyUserVM.swift */,
+				7E31A2F8278E1B4000E21F7A /* ImageVM.swift */,
+			);
+			path = ViewModelsCompany;
+			sourceTree = "<group>";
+		};
+		7E34FAF12781F2A10023BCA6 /* TeamViews */ = {
+			isa = PBXGroup;
+			children = (
+				7E34FAE32780B0460023BCA6 /* EditTeamView.swift */,
+				7E34FAC8277FFD720023BCA6 /* MyTeamsView.swift */,
+				7E34FACF27800A000023BCA6 /* SearchTeamView.swift */,
+				7E34FAD527800F590023BCA6 /* TeamDetailView.swift */,
+				7E3459B6276E42FD001D5EE5 /* TeamsView.swift */,
+				7E34FAF427821C780023BCA6 /* SearchTeamView2.swift */,
+			);
+			path = TeamViews;
+			sourceTree = "<group>";
+		};
+		7E4AE9BC2786364100308036 /* ComakershipCreateViews */ = {
+			isa = PBXGroup;
+			children = (
+				7E3459CF2773D224001D5EE5 /* ComakershipsCreateView.swift */,
+				7E6A6838277C2E5100166A2F /* ComakershipsCreateView2.swift */,
+				7E34FAAA277D26A80023BCA6 /* ComakershipsCreateView3.swift */,
+			);
+			path = ComakershipCreateViews;
+			sourceTree = "<group>";
+		};
+		7E4AE9E22787D3F300308036 /* ComakershipViews */ = {
+			isa = PBXGroup;
+			children = (
+				7E6A6830277ADE3A00166A2F /* ComakershipsView.swift */,
+				7E0A276D259CEE4B00E1E4F0 /* ComakershipsSearchView.swift */,
+				7E34FAC2277FEFDC0023BCA6 /* ComakershipApplyView.swift */,
+				7E4AE9E32787D47F00308036 /* ComakershipSummaryView.swift */,
+				7E4AE9D62787A65900308036 /* FileSelectView.swift */,
+				7E4AE9E527880D2500308036 /* ComakershipUploadView.swift */,
+				7E4AE9E72788166C00308036 /* FileUploadView.swift */,
+				7E4AE9E9278816F400308036 /* PDFKitView.swift */,
+			);
+			path = ComakershipViews;
+			sourceTree = "<group>";
+		};
+		7E4AE9F12789F99600308036 /* MyCompanyViews */ = {
+			isa = PBXGroup;
+			children = (
+				7E3459D22775766A001D5EE5 /* CompanyView.swift */,
+				7E4AE9F22789F9D200308036 /* AddCompanyUserView.swift */,
+				7E4AE9FC278A792700308036 /* CompanyMainView.swift */,
+				7E4AE9FE278A794000308036 /* NoCompanyView.swift */,
+			);
+			path = MyCompanyViews;
+			sourceTree = "<group>";
+		};
+		7E4AEA04278AA94C00308036 /* ComakershipViews */ = {
+			isa = PBXGroup;
+			children = (
+				7E4AE9CB278791AC00308036 /* ComakershipOverView.swift */,
+				7E34FABC277F98E10023BCA6 /* ComakershipKickoffView2.swift */,
+				7E4AE9BD27869A3A00308036 /* CompletedComakershipView.swift */,
+				7E4AE9BF27869BF000308036 /* ComakershipKickoffView.swift */,
+				7E34FAB3277EE4680023BCA6 /* ComakershipsMainView.swift */,
+			);
+			path = ComakershipViews;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -146,6 +704,10 @@
 			dependencies = (
 			);
 			name = ComakershipsApp;
+			packageProductDependencies = (
+				7E2688DE2582F363002751B3 /* KeychainAccess */,
+				7E4AE9D027879F4000308036 /* Alamofire */,
+			);
 			productName = ComakershipsApp;
 			productReference = 7E2688A72582F2B2002751B3 /* ComakershipsApp.app */;
 			productType = "com.apple.product-type.application";
@@ -217,6 +779,10 @@
 				Base,
 			);
 			mainGroup = 7E26889E2582F2B2002751B3;
+			packageReferences = (
+				7E2688DD2582F363002751B3 /* XCRemoteSwiftPackageReference "KeychainAccess" */,
+				7E4AE9CF27879F3F00308036 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = 7E2688A82582F2B2002751B3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -259,8 +825,152 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E3459DB2776CAFC001D5EE5 /* CompanyVM.swift in Sources */,
+				7E2688FC2582FCD4002751B3 /* RequestError.swift in Sources */,
+				7E4AE9C62786C02400308036 /* ComakershipMembers.swift in Sources */,
+				7E3459C327700748001D5EE5 /* EntryField.swift in Sources */,
+				7E34FAEA2780DF620023BCA6 /* TeamBasic.swift in Sources */,
+				7E4AE9C22786A30500308036 /* testview.swift in Sources */,
+				7E34FAE227809DD30023BCA6 /* PurpleButton.swift in Sources */,
+				7E3459E12778A2C9001D5EE5 /* EditCompanyUserVM.swift in Sources */,
+				7E34FAB4277EE4680023BCA6 /* ComakershipsMainView.swift in Sources */,
+				7E2689132583033A002751B3 /* Skill.swift in Sources */,
+				7E34FAE42780B0460023BCA6 /* EditTeamView.swift in Sources */,
+				7E4AEA06278B4AD700308036 /* NavigationManager.swift in Sources */,
+				7E3459D32775766A001D5EE5 /* CompanyView.swift in Sources */,
+				7E34FADA27808BEE0023BCA6 /* TeamGet.swift in Sources */,
+				7E31561925847D2100BFD7E9 /* Team.swift in Sources */,
+				7E6A6833277BEAEC00166A2F /* TopRect.swift in Sources */,
+				7E0BCA1525869B7F006FD71E /* RegisterResponse.swift in Sources */,
+				7E31A2F7278DFDCE00E21F7A /* ImagePicker.swift in Sources */,
+				7E34FAB9277F6EB40023BCA6 /* BaseComakership.swift in Sources */,
+				7E34FACB277FFF410023BCA6 /* InboxCompanyView.swift in Sources */,
+				7E34FAF727824C130023BCA6 /* MyJoinQuery.swift in Sources */,
+				7EED10BE2585629B003243F6 /* TeamComakership.swift in Sources */,
+				7E2689042582FDDC002751B3 /* Comakership.swift in Sources */,
+				7E4AE9FD278A792700308036 /* CompanyMainView.swift in Sources */,
+				7E3459D02773D224001D5EE5 /* ComakershipsCreateView.swift in Sources */,
+				7EED10D52585A286003243F6 /* JoinRequest.swift in Sources */,
+				7E34FAB2277ED1A20023BCA6 /* CreateTeamView.swift in Sources */,
+				7E34FAC5277FF3BC0023BCA6 /* ApplyVM.swift in Sources */,
+				7E4AE9CC278791AC00308036 /* ComakershipOverView.swift in Sources */,
+				7E2689182583037C002751B3 /* Program.swift in Sources */,
+				7E4AE9E12787C74E00308036 /* FilesGetVM.swift in Sources */,
+				7E4AE9D32787A46900308036 /* ImageRequest.swift in Sources */,
+				7E08923C25A3D35900D08552 /* LinkedStudent.swift in Sources */,
+				7E34FAC1277FD8520023BCA6 /* EditComakership.swift in Sources */,
+				7E3155FC258451A700BFD7E9 /* ComakershipGetVM.swift in Sources */,
+				7E0A2778259D45DC00E1E4F0 /* ComakershipsGet.swift in Sources */,
+				7E34FAC9277FFD720023BCA6 /* MyTeamsView.swift in Sources */,
+				7E34FAA5277CEB450023BCA6 /* LoginVM.swift in Sources */,
+				7E3459DF27788A3D001D5EE5 /* ViewRouter.swift in Sources */,
+				7E4AE9EE2788F07200308036 /* Assignment.swift in Sources */,
+				7E3459C127700551001D5EE5 /* EditStudentVM.swift in Sources */,
+				7E3459BD276FFE1E001D5EE5 /* TeamResponse.swift in Sources */,
+				7E6A6837277C184D00166A2F /* CheckBox.swift in Sources */,
+				7E34FAE62780DE930023BCA6 /* JoinQuery.swift in Sources */,
+				7E3459C72773C7FD001D5EE5 /* RegisterCompany.swift in Sources */,
+				7E6A6835277BFE0000166A2F /* CreateComakershipVM.swift in Sources */,
 				7E2688AD2582F2B2002751B3 /* ContentView.swift in Sources */,
+				7E268909258301A6002751B3 /* ComakershipCompany.swift in Sources */,
+				7EED10C325856321003243F6 /* StudentUser.swift in Sources */,
+				7E4AE9D92787A69C00308036 /* FileInput.swift in Sources */,
+				7E0A2773259CEE5700E1E4F0 /* ProfileView.swift in Sources */,
+				7E34FABD277F98E10023BCA6 /* ComakershipKickoffView2.swift in Sources */,
+				7E4AE9F32789F9D200308036 /* AddCompanyUserView.swift in Sources */,
+				7E4AE9EA278816F400308036 /* PDFKitView.swift in Sources */,
+				7E4AE9C027869BF000308036 /* ComakershipKickoffView.swift in Sources */,
+				7E3459B7276E42FD001D5EE5 /* TeamsView.swift in Sources */,
+				7E31560F258479B100BFD7E9 /* Deliverable.swift in Sources */,
+				7E34FADE278095680023BCA6 /* StudentUserT.swift in Sources */,
+				7EED10C825856525003243F6 /* TeamInvite.swift in Sources */,
+				7E34FAD827808A8E0023BCA6 /* InboxTeamsVM.swift in Sources */,
+				7E4AE9B92784C05F00308036 /* Member.swift in Sources */,
+				7E31561E25847DC700BFD7E9 /* University.swift in Sources */,
+				7E0A276E259CEE4B00E1E4F0 /* ComakershipsSearchView.swift in Sources */,
+				7E4AE9C42786BFD900308036 /* ComakershipComplete.swift in Sources */,
+				7E3459B5276AA74E001D5EE5 /* Student.swift in Sources */,
+				7E34FAD627800F590023BCA6 /* TeamDetailView.swift in Sources */,
+				7E3459E727791597001D5EE5 /* StudentToEdit.swift in Sources */,
+				7E4AE9FF278A794000308036 /* NoCompanyView.swift in Sources */,
+				7E3459BB276FF1BA001D5EE5 /* TeamsVM.swift in Sources */,
+				7E4AE9D52787A4F900308036 /* FileUpload.swift in Sources */,
+				7E4AE9F027894FCD00308036 /* ComakershipProgressBar.swift in Sources */,
+				7E3459DD2776D877001D5EE5 /* CompanyUserGet.swift in Sources */,
+				7E4AE9E42787D47F00308036 /* ComakershipSummaryView.swift in Sources */,
+				7E4AE9D72787A65900308036 /* FileSelectView.swift in Sources */,
+				7EED10CD258565A4003243F6 /* StudentTeam.swift in Sources */,
+				7E3459CB2773C8D2001D5EE5 /* CompanyUserReg.swift in Sources */,
+				7E3459B1275E9F7D001D5EE5 /* RegisterVM.swift in Sources */,
+				7E3459E32778A4B8001D5EE5 /* CompanyUserProfileView.swift in Sources */,
+				7E34FAEE2781D3540023BCA6 /* RedButton.swift in Sources */,
+				7E34FABF277FD72C0023BCA6 /* EditComakershipVM.swift in Sources */,
+				7E4AE9B5278400DA00308036 /* MyApplications.swift in Sources */,
+				7E6A6831277ADE3A00166A2F /* ComakershipsView.swift in Sources */,
+				7E296728258AFEE0001EA5D6 /* HomeView.swift in Sources */,
+				7E3459B9276E44FB001D5EE5 /* InboxView.swift in Sources */,
+				7E31A2F9278E1B4000E21F7A /* ImageVM.swift in Sources */,
+				7E3459BF277004AD001D5EE5 /* EditStudent.swift in Sources */,
+				7E4AE9EC2788F02F00308036 /* DeliverablesVM.swift in Sources */,
+				7EED10DA2585A314003243F6 /* Login.swift in Sources */,
+				7E34FACD277FFF8C0023BCA6 /* InboxVM.swift in Sources */,
+				7E34FAD427800AB10023BCA6 /* GreenButton.swift in Sources */,
+				7E26890E258302E7002751B3 /* ComakershipStatus.swift in Sources */,
+				7E34FAE0278098000023BCA6 /* UserComakership.swift in Sources */,
+				7E4AE9B72784B9D200308036 /* TeamMembers.swift in Sources */,
+				7E3459C52773C6D5001D5EE5 /* RegisterCompanyUserView.swift in Sources */,
+				7E2688EB2582F4BE002751B3 /* RegisterView.swift in Sources */,
+				7E2688D92582F310002751B3 /* API.swift in Sources */,
+				7E26891D258306C1002751B3 /* Review.swift in Sources */,
+				7E2688F22582FB1C002751B3 /* LoginRequest.swift in Sources */,
+				7E34FAF32781FD4C0023BCA6 /* EditTeamVM.swift in Sources */,
+				7E4AE9F7278A0EA300308036 /* AddCompanyUser.swift in Sources */,
+				7E34FADC27808C870023BCA6 /* LinkedTeam.swift in Sources */,
+				7E31A2F5278DFCE000E21F7A /* ImageUploadView.swift in Sources */,
+				7E2688E62582F4AC002751B3 /* LoginView.swift in Sources */,
+				7E4AEA03278AA30900308036 /* ReviewPost.swift in Sources */,
+				7E0BCA1025869A3A006FD71E /* RegisterStudent.swift in Sources */,
+				7E34FAC3277FEFDC0023BCA6 /* ComakershipApplyView.swift in Sources */,
+				7E34FABB277F70E50023BCA6 /* ComakershipCGet.swift in Sources */,
+				7EED10DF2585B587003243F6 /* CompanyUser.swift in Sources */,
+				7E34FAC7277FF9D90023BCA6 /* TeamPost.swift in Sources */,
+				7E6A6839277C2E5100166A2F /* ComakershipsCreateView2.swift in Sources */,
+				7E34FAAD277D32F10023BCA6 /* ComakershipCreate.swift in Sources */,
+				7E3459E52778A535001D5EE5 /* CompanyHomeView.swift in Sources */,
+				7E3459D9277654C3001D5EE5 /* RegisterCompanyView.swift in Sources */,
+				7E4AE9FB278A4DEC00308036 /* ChangePassword.swift in Sources */,
+				7E3459C92773C814001D5EE5 /* RegisterCompanyWithLogo.swift in Sources */,
+				7E31561425847C8E00BFD7E9 /* PurchaseKey.swift in Sources */,
+				7E34FAF02781E4060023BCA6 /* MidProgressView.swift in Sources */,
 				7E2688AB2582F2B2002751B3 /* ComakershipsAppApp.swift in Sources */,
+				7E4AEA01278A89F200308036 /* ModelManager.swift in Sources */,
+				7E34FAA7277D13420023BCA6 /* FormPicker.swift in Sources */,
+				7E34FAE82780DF0C0023BCA6 /* StudentUserBasic.swift in Sources */,
+				7E3459B3276A4575001D5EE5 /* MainView.swift in Sources */,
+				7E2688F72582FC05002751B3 /* LoginResponse.swift in Sources */,
+				7E4AE9E82788166C00308036 /* FileUploadView.swift in Sources */,
+				7E4AE9E627880D2500308036 /* ComakershipUploadView.swift in Sources */,
+				7E34FAB6277EE6110023BCA6 /* ComakershipVM.swift in Sources */,
+				7E4AE9C827874E4C00308036 /* EditComakershipView.swift in Sources */,
+				7E4AE9F9278A4D8700308036 /* CompanyUserToEdit.swift in Sources */,
+				7E34FAD027800A000023BCA6 /* SearchTeamView.swift in Sources */,
+				7E3156072584777300BFD7E9 /* Company.swift in Sources */,
+				7E31562325847EF500BFD7E9 /* User.swift in Sources */,
+				7E34FAF527821C780023BCA6 /* SearchTeamView2.swift in Sources */,
+				7E34FAB0277D5B1A0023BCA6 /* PurchaseKeyError.swift in Sources */,
+				7E3459CD2773CD8C001D5EE5 /* RegisterCompanyVM.swift in Sources */,
+				7E4AE9CE278792AD00308036 /* FilesVM.swift in Sources */,
+				7E3459D527757786001D5EE5 /* CompanyRegVM.swift in Sources */,
+				7E1E251325A022F40081A449 /* StudentVM.swift in Sources */,
+				7E34FAEC2780ED340023BCA6 /* JoinModel.swift in Sources */,
+				7E241FF125926A2D00EAAD62 /* UserInfo.swift in Sources */,
+				7E4AE9BB2784C65500308036 /* TeamApplycation.swift in Sources */,
+				7E25516C259147B500FC89AF /* BaseView.swift in Sources */,
+				7E4AE9B32784009D00308036 /* ApplicationsForTeam.swift in Sources */,
+				7E4AE9F52789FAE100308036 /* AddCompanyUserVM.swift in Sources */,
+				7E34FAAB277D26A80023BCA6 /* ComakershipsCreateView3.swift in Sources */,
+				7E6A682F277AD99300166A2F /* ComakershipSearch.swift in Sources */,
+				7E4AE9BE27869A3A00308036 /* CompletedComakershipView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -580,6 +1290,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7E2688DD2582F363002751B3 /* XCRemoteSwiftPackageReference "KeychainAccess" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kishikawakatsumi/KeychainAccess.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.2.1;
+			};
+		};
+		7E4AE9CF27879F3F00308036 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7E2688DE2582F363002751B3 /* KeychainAccess */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7E2688DD2582F363002751B3 /* XCRemoteSwiftPackageReference "KeychainAccess" */;
+			productName = KeychainAccess;
+		};
+		7E4AE9D027879F4000308036 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7E4AE9CF27879F3F00308036 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 7E26889F2582F2B2002751B3 /* Project object */;
 }

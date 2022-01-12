@@ -11,7 +11,13 @@ import SwiftUI
 struct ComakershipsAppApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainView()
+//            if (API.shared.isAuthenticated){
+//                MainView()
+//            }
+//            else{
+//                LoginView()
+//            }
         }
     }
 }
