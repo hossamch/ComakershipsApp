@@ -34,7 +34,6 @@ class CreateComakershipVM: ObservableObject{
     private var cancellables = Set<AnyCancellable>()
     
     private init(){
-        getPrograms()
     }
     
     static func renew(){
@@ -116,6 +115,10 @@ class CreateComakershipVM: ObservableObject{
         }
     }
     
+    func removeDeliverable(name: String){
+        deliverables.remove(at: deliverables.firstIndex(where: {$0.name == name})!)
+    }
+    
     func removeDeliverables(){
         if deliverables.count > 0{
             deliverables.remove(at: deliverables.count-1)
@@ -131,6 +134,10 @@ class CreateComakershipVM: ObservableObject{
         skills.forEach{d in
             print(d.name)
         }
+    }
+    
+    func removeSkill(name: String){
+        skills.remove(at: skills.firstIndex(where: {$0.name == name})!)
     }
     
     func removeSkills(){
@@ -216,7 +223,6 @@ class CreateComakershipVM: ObservableObject{
                     throw URLError(.badServerResponse)
                     
                 }
-                print("response: \(response)")
                 return data
             }
             //.decode(type: RegisterResponse.self, decoder: JSONDecoder())
@@ -247,9 +253,6 @@ class CreateComakershipVM: ObservableObject{
                     }
                 }
             }, receiveValue: { (response)  in
-                //print("completion: \(completion)")
-                //print("response: \(response)")
-                //completion(.success(response))
             })
             .store(in: &cancellables)
     }

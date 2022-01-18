@@ -23,8 +23,7 @@ struct ProfileView: View {
                 TopRect()
                     //.frame(maxHeight: 100)
                 if (viewModel.name == ""){
-                    Text("There is something wrong with your connection, try again later.")
-                        .font(.headline)
+                    MidProgressView()
                 }
                 else if viewModel.isLoading{
                     ProgressView("Processing...")

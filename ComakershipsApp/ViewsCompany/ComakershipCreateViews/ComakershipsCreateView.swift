@@ -34,6 +34,9 @@ struct ComakershipsCreateView: View {
                             
                             ForEach(viewModel.programs){ it in
                                 Text(it.name).tag(it.id as Int?)
+                                if viewModel.programs.count == 0{
+                                    ProgressView()
+                                }
                             }
                         }
                         .padding(10)
@@ -89,10 +92,7 @@ struct ComakershipsCreateView: View {
             }
             .navigationBarTitle("Create a Comakership", displayMode: .inline)
             .onAppear{
-                if viewModel.success{
-                //    viewModel.success = false
-//                    self.presentationMode.wrappedValue.dismiss()
-                }
+                viewModel.getPrograms()
             }
         }
         

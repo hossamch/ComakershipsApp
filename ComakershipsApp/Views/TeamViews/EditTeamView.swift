@@ -145,6 +145,7 @@ struct EditTeamView: View {
                 viewModel.isAlerted = true
             }, label: {
                 Text("Leave")
+                    .foregroundColor(.red)
             }))
         }
 

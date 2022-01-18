@@ -13,7 +13,7 @@ struct HomeView: View {
     @ObservedObject var inboxvm = InboxTeamsVM.shared
     @ObservedObject var comakershipvm = ComakershipVM.shared
     @ObservedObject var manager = NavigationManager.shared
-    //beta
+    //final
     var body: some View {
         NavigationView{
             VStack {
@@ -32,12 +32,14 @@ struct HomeView: View {
                             if inboxvm.joinRequests.results.count > 0{
                                 Text("Check out your inbox, you got mail!")
                                     .font(.subheadline)
+                                    .fontWeight(.bold)
                                     .padding()
                                     .frame(width: 350, alignment: .center)
                             }
                             if comakershipvm.countStarted > 0{
                                 Text("You're participating in a comakership, check it out!")
                                     .font(.subheadline)
+                                    .fontWeight(.bold)
                                     .padding()
                                     .frame(width: 350, alignment: .center)
                             }
@@ -58,19 +60,10 @@ struct HomeView: View {
                             }
                         }
                         .frame(height: 600)
-                        //.overlay(RoundedRectangle(cornerRadius: 8).stroke(Color.gray, lineWidth: 1))
-                       // .shadow(color: .black, radius: 1, x: 600, y: 0)
                         .background(Color.white // any non-transparent background
                                         .shadow(color: Color.black, radius: 1, x: 0, y: 0)
                           )
                         .padding()
-                        
-                        
-                        
-                       
-//                        Text("ID: " + api.userId!)
-//                        Text("Type: " + api.userType!)
-                       // Spacer()
                     }
                 }
 
@@ -80,6 +73,7 @@ struct HomeView: View {
                     }
                 }, label: {
                     Image(systemName: "escape")
+                        .foregroundColor(.purple)
                 })
                 )
             }

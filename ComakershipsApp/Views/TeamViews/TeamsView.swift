@@ -29,8 +29,10 @@ struct TeamsView: View {
                                                 HStack{
                                                     Text("\(viewModel.teams[i].id)")
                                                         .font(.headline)
+                                                        .padding(.trailing)
                                                     Text(viewModel.teams[i].name)
                                                         .font(.headline)
+                                                        .padding(.trailing)
                                                     Text(viewModel.teams[i].description)
                                                         .font(.subheadline)
                                                 }

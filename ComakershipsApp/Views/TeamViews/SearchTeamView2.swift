@@ -25,14 +25,15 @@ struct SearchTeamView2: View {
                     VStack{
                         VStack{
                             Text("\(viewModel.teamById?.id ?? 0)")
-                                .font(.headline)
+                                .font(.subheadline)
+                                .fontWeight(.bold)
                                 .padding()
                             Text(viewModel.teamById?.name ?? "Error")
                                 .font(.title)
                                 .fontWeight(.bold)
                                 .padding()
                             Text(viewModel.teamById?.description ?? "Error")
-                                .font(.subheadline)
+                                .font(.headline)
                                 .padding()
                         }
 //                        .frame(height: 200)
@@ -106,6 +107,9 @@ struct SearchTeamView2: View {
                         .navigationBarTitleDisplayMode(.inline)
                     }
                     .position(x: 190, y: -160)
+                    .onAppear{
+                        viewModel.getMyJoinRequests()
+                    }
                 }
                 // joined case to be tested
             }.alert(isPresented: $isAlerted){

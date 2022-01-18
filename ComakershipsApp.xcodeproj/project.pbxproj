@@ -484,7 +484,6 @@
 				7E4AE9E22787D3F300308036 /* ComakershipViews */,
 				7E34FAF12781F2A10023BCA6 /* TeamViews */,
 				7E25516B259147B500FC89AF /* BaseView.swift */,
-				7E34FAB1277ED1A20023BCA6 /* CreateTeamView.swift */,
 				7E296727258AFEE0001EA5D6 /* HomeView.swift */,
 				7E3459B8276E44FB001D5EE5 /* InboxView.swift */,
 				7E2688E52582F4AC002751B3 /* LoginView.swift */,
@@ -634,6 +633,7 @@
 				7E34FAC8277FFD720023BCA6 /* MyTeamsView.swift */,
 				7E34FACF27800A000023BCA6 /* SearchTeamView.swift */,
 				7E34FAD527800F590023BCA6 /* TeamDetailView.swift */,
+				7E34FAB1277ED1A20023BCA6 /* CreateTeamView.swift */,
 				7E3459B6276E42FD001D5EE5 /* TeamsView.swift */,
 				7E34FAF427821C780023BCA6 /* SearchTeamView2.swift */,
 			);

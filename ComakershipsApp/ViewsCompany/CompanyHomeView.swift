@@ -29,23 +29,20 @@ struct CompanyHomeView: View {
                                     .font(.title)
                                     .fontWeight(.bold)
                                     .padding()
-                                Text("For comakership key inquiries, send an email to hossam_c@icloud.com.")
-                                    .font(.headline)
-                                    .padding()
+                                
                                 if inboxvm.applications.count > 0{
                                     Text("Check out your inbox, you got mail!")
                                         .font(.subheadline)
+                                        .fontWeight(.bold)
                                         .padding()
                                         .frame(width: 350, alignment: .center)
                                 }
-//                                if comakershipvm.comakerships.count > 0{
-//                                    Text("You're participating in a comakership, check it out!")
-//                                        .font(.subheadline)
-//                                        .padding()
-//                                        .frame(width: 350, alignment: .center)
-//                                }
-                                
                                 Spacer()
+                                Text("For comakership key inquiries, send an email to hossam_c@icloud.com.")
+                                    .font(.headline)
+                                    .padding()
+                                
+                               // Spacer()
                                 VStack{
                                     Button(action: {
                                         manager.changeTab(tab: 4)
@@ -89,6 +86,7 @@ struct CompanyHomeView: View {
                         }
                     }, label: {
                         Image(systemName: "escape")
+                            .foregroundColor(.purple)
                     })
                     )
                 }

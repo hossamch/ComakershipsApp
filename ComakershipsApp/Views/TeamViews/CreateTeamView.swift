@@ -19,7 +19,7 @@ struct CreateTeamView: View {
             VStack{
                 TopRect()
                 if viewModel.loadingCreate{
-                    ProgressView("One moment please..")
+                    MidProgressView()
                 }
                 else{
                     VStack{

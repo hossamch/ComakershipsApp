@@ -87,9 +87,10 @@ struct CompanyView: View {
             .navigationBarTitle("Your Company", displayMode: .inline)
             .navigationBarItems(trailing: NavigationLink(destination: AddCompanyUserView(companyId: viewModel.companyUser.companyId!, companyName: viewModel.companyUser.company!.name)) {
                 Image(systemName: "person.badge.plus")
+                    .foregroundColor(.purple)
             })
         }
-        
+        .accentColor(.purple)
     }
 }
 

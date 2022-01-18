@@ -76,6 +76,7 @@ struct ComakershipsView: View {
             }
         }
         .navigationBarTitle("Results")
+        .accentColor(.purple)
     }
 }
 

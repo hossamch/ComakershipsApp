@@ -46,15 +46,11 @@ struct ComakershipsSearchView: View {
                             })
                         })
                     Spacer()
-                    
-                    
-                    
-                    
                     .navigationBarTitle("Search Comakerships", displayMode: .inline)
-                    .font(.title2)
                 }
             }
         }
+        .accentColor(.purple)
         .onAppear{
             ApplyVM.shared.teamsvm.getMyTeams()
         }

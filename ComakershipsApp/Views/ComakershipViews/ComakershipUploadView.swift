@@ -173,12 +173,14 @@ struct ComakershipUploadView: View {
                             return Alert(title: Text("Success"), message: Text("Review Sent"), dismissButton: .default(Text("OK")))
                         }
                     }
+                    
                     .toolbar {
                         ToolbarItem(placement: .navigationBarTrailing) {
                             Button("Leave"){
                                 isShowingConfirmAlertForLeave = true
                                 isShowingConfirmAlert = true
                             }
+                            .foregroundColor(.red)
                         }
                     }
                     

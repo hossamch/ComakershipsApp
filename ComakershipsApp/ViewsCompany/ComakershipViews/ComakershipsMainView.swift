@@ -116,6 +116,7 @@ struct ComakershipsMainView: View {
                             } label: {
                                 //Text("open menu")
                                 Label("Create Comakership", systemImage: "ellipsis")
+                                    .foregroundColor(.purple)
                                 
                             }
                             .background{
@@ -150,6 +151,7 @@ struct ComakershipsMainView: View {
                 }
             }
         }
+        .accentColor(.purple)
     }
 }
 

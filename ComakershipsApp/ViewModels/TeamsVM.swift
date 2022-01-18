@@ -36,11 +36,11 @@ final class TeamsVM: ObservableObject{
     private var cancellables = Set<AnyCancellable>()
     
     private init(){
-        if (api.isAuthenticated){
-            getAllTeams()
-            getMyTeams()
-            getMyJoinRequests()
-        }
+//        if (api.isAuthenticated){
+//            getAllTeams()
+//            getMyTeams()
+//            getMyJoinRequests()
+//        }
     }
     
     static func renew(){

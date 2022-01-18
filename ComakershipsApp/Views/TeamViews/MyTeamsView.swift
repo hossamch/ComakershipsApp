@@ -30,8 +30,10 @@ struct MyTeamsView: View {
                                                 HStack{
                                                     Text("\(viewModel.myTeams[i].teamId)")
                                                         .font(.headline)
+                                                        .padding(.trailing)
                                                     Text(viewModel.myTeams[i].team.name)
                                                         .font(.headline)
+                                                        .padding(.trailing)
                                                     Text(viewModel.myTeams[i].team.description)
                                                         .font(.subheadline)
                                                 }
@@ -92,7 +94,7 @@ struct MyTeamsView: View {
                             destination: CreateTeamView(viewModel: viewModel),
                                 label: {
                                     Text("Create")
-                                        .foregroundColor(.blue)
+                                        .foregroundColor(.purple)
                                         //.opacity(api.isAuthenticated ? 0 : 1)
                                 }
                         ))
@@ -100,6 +102,7 @@ struct MyTeamsView: View {
                 }
             }
         }
+        .accentColor(.purple)
     }
 }
 

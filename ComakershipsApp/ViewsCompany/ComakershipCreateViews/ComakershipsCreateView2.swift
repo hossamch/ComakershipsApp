@@ -15,47 +15,55 @@ struct ComakershipsCreateView2: View {
         VStack{
             List {
                 ForEach(0..<viewModel.deliverables.count, id: \.self) { i in
-                    Text("\(viewModel.deliverables[i].name)")
-                }
-            }
-            .onTapGesture {
-                viewModel.isAddingDeliverable = false
-            }
-            if viewModel.isAddingDeliverable {
-                Form {
-                    Section(header: Text("Deliverable to Add")) {
-                        HStack {
-                            TextField("Deliverable", text: $viewModel.deliverable)
-                                //.keyboardType(.numberPad)
-                            Button(action: {
-                                viewModel.addDeliverable()
-                                viewModel.isAddingDeliverable = true
-                            }) {
-                                Text("Add")
+                    if #available(iOS 15.0, *) {
+                        Text("\(viewModel.deliverables[i].name)")
+                            .swipeActions(edge: .trailing) {
+                                Button(role: .destructive, action: {print(viewModel.deliverables[i]); viewModel.removeDeliverable(name: viewModel.deliverables[i].name) } ) {
+                                Label("Delete", systemImage: "trash")
+                              }
                             }
-                        }
-
+                        
+                        
+                        
+                        
+                    } else {
+                        // Fallback on earlier versions
                     }
                 }
-                .frame(height: 150)
             }
-            HStack{
-                Button(action: {
-                    viewModel.isAddingDeliverable = true
-                }) {
-                    Image(systemName: "plus.square.fill")
-                        .padding(3)
-                }
-                
-                Button(action: {
-                    viewModel.removeDeliverables()
-                }) {
-                    Image(systemName: "minus.square.fill")
-                        .padding(3)
+            Form {
+                Section(header: Text("Deliverable to Add")) {
+                    HStack {
+                        TextField("Deliverable", text: $viewModel.deliverable)
+                            //.keyboardType(.numberPad)
+                        Button(action: {
+                            viewModel.addDeliverable()
+                            viewModel.isAddingDeliverable = true
+                        }) {
+                            Text("Add")
+                        }
+                    }
+
                 }
             }
+            .frame(height: 150)
+//            HStack{
+//                Button(action: {
+//                    viewModel.isAddingDeliverable = true
+//                }) {
+//                    Image(systemName: "plus.square.fill")
+//                        .padding(3)
+//                }
+//
+//                Button(action: {
+//                    viewModel.removeDeliverables()
+//                }) {
+//                    Image(systemName: "minus.square.fill")
+//                        .padding(3)
+//                }
+//            }
             
-            Text("Click on the plus box to add a deliverable, or on the minus box to start over.")
+            Text("Swipe to delete a deliverable.")
                 .font(.caption)
             
             

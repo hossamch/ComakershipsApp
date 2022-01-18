@@ -107,6 +107,7 @@ struct InboxCompanyView: View {
                 viewModel.refresh()
             }, label: {
                 Image(systemName: "arrow.clockwise")
+                    .foregroundColor(.purple)
             }))
         }
         .onAppear{

@@ -100,21 +100,11 @@ struct InboxView: View {
                 viewModel.refresh()
             }, label: {
                 Image(systemName: "arrow.clockwise")
+                    .foregroundColor(.purple)
             }))
         }
         .onAppear{
             viewModel.getAllNotifications()
-//            if API.shared.isAuthenticated{
-//                viewModel.refresh()
-//            }
-//            viewModel.status = JoinRequestStatus.Default
-//            if viewModel.joinRequests.results.count == 0{
-//                viewModel.getAllNotifications()
-            //}
-            
-            //if API.shared.isAuthenticated{
-                //viewModel.checkIfEmpty()
-            //}
         }
     }
         

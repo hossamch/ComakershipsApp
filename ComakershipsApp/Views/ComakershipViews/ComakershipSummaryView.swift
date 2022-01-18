@@ -89,7 +89,7 @@ struct ComakershipSummaryView: View {
                     ToolbarItem(placement: .navigationBarTrailing) {
                         NavigationLink(destination: ComakershipsSearchView()) {
                             Image(systemName: "magnifyingglass")
-                                .font(.title)
+                                .foregroundColor(.purple)
                         }
             
                     }
@@ -100,6 +100,7 @@ struct ComakershipSummaryView: View {
                 viewModel.getComakerships()
             }
         }
+        .accentColor(.purple)
     }
 }
 
